@@ -1,0 +1,31 @@
+.page {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+}
+.chats {
+    background-color: #ffffff;
+}
+.weui-media-box__title {
+    position: relative;
+}
+
+.weui-media-box__title view {
+    position: relative;
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+.weui-media-box__title.unread view:after {
+    display: block;
+    content: " ";
+    background-color: #f00;
+    position: absolute;
+    right: -20rpx;
+    top: -8rpx;
+    border: 7rpx solid #f00;
+    border-radius: 50%;
+}

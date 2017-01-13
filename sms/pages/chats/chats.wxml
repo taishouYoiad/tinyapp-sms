@@ -1,0 +1,17 @@
+<view class="page">
+    <view class="chats">
+        <block wx:key="{{index}}" wx:for="{{chats}}">
+            <template is="chatItem" data="{{item}}" />
+        </block>
+    </view>
+</view>
+
+<template name="chatItem">
+    <navigator url="../chat/chat?number={{item.contact}}" class="weui-item-box weui-item-box_text">
+        <view class="weui-media-box weui-media-box_text">
+            <view class="weui-media-box__title weui-media-box__title_in-text {{item.unread?'unread':''}}"><view>{{item.contact}}</view></view>
+            <view class="weui-media-box__desc">{{item.content}}</view>
+        </view>
+        <!--<view class="weui-item-box__sub">{{item.time}}</view>-->
+    </navigator>
+</template>

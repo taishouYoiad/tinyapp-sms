@@ -1,0 +1,23 @@
+<form bindsubmit="handleLogin">
+    <view class="container">
+        <view class="weui-cells">
+            <view class="weui-cell weui-cell_input {{name_invalid?'weui-cell_warn':''}}">
+                <view class="weui-cell__hd"><view class="weui-label">账号</view></view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="name" type="text" placeholder="请输入账号"/>
+                </view>
+                <view wx:if="{{name_invalid}}" class="weui-cell__ft"><icon color="#E64340" size="23" type="warn"></icon></view>
+            </view>
+            <view class="weui-cell weui-cell_input {{pwd_invalid?'weui-cell_warn':''}}">
+                <view class="weui-cell__hd"><view class="weui-label">密码</view></view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="pwd" type="password" placeholder="请输入密码"/>
+                </view>
+                <view wx:if="{{pwd_invalid}}" class="weui-cell__ft"><icon color="#E64340" size="23" type="warn"></icon></view>
+            </view>
+        </view>
+        <view class="weui-btn-area">
+            <button form-type="submit" type="primary">登录</button>
+        </view>
+    </view>
+</form>

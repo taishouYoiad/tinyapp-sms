@@ -1,0 +1,25 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">当前用户</view>
+        <view class="page__desc">{{name}}</view>
+    </view>
+    <view class="weui-cells">
+        <navigator wx:if="{{name==='--'}}" url="/pages/bind/bind" class="weui-cell weui-cell_access" href="javascript:;">
+            <view class="weui-cell__bd">账号绑定</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access">
+            </view>
+        </navigator>
+        <navigator bindtap="handleClearStorage" class="weui-cell weui-cell_access" href="javascript:;">
+            <view class="weui-cell__bd">清除缓存</view>
+        </navigator>
+        <navigator wx:if="{{name!=='--'}}" bindtap="handleLogout" class="weui-cell weui-cell_access" href="javascript:;">
+            <view class="weui-cell__bd">退出</view>
+        </navigator>
+        <!--<navigator bindtap="handleCloseWebsocket" class="weui-cell weui-cell_access" href="javascript:;">-->
+            <!--<view class="weui-cell__bd">关闭socket</view>-->
+        <!--</navigator>-->
+        <!--<navigator bindtap="handleOpenWebsocket" class="weui-cell weui-cell_access" href="javascript:;">-->
+            <!--<view class="weui-cell__bd">连接socket</view>-->
+        <!--</navigator>-->
+    </view>
+</view>

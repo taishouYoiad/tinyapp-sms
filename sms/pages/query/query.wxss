@@ -1,0 +1,19 @@
+.weui-vcode-btn {
+    display: inline-block;
+    height: 68rpx;
+    margin-left: 10rpx;
+    margin: 10rpx;
+    padding: 0 0.6em 0 0.7em;
+    border: 0;
+    line-height: 68rpx;
+    vertical-align: middle;
+    font-size: 34rpx;
+    color: #3CC51F;
+    background-color: #fff;
+}
+
+.weui-cell_vcode {
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}

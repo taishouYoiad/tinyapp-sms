@@ -1,0 +1,27 @@
+<form bindsubmit="handleSubmit" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page">
+        <view class="msgs">
+            <block wx:key="{{index}}" wx:for="{{msgs}}">
+                <view class="msg-item {{item.direction}}">
+                    <view class="msg-text">
+                        {{item.content}}
+                    </view>
+                </view>
+            </block>
+        </view>
+        <view class="text-bar">
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_vcode">
+                    <view class="weui-cell__bd">
+                        <input class="weui-input text-input" name="content" type="text" bindinput="handleChange" value="{{content}}"/>
+                    </view>
+                    <view class="weui-cell__ft">
+                        <button disabled="{{content_invalid}}" size="mini" form-type="submit" type="primary">发送</button>
+                        <!--<button wx:if="{{!content_invalid}}" size="mini" form-type="submit" type="primary">发送</button>-->
+                        <!--<view wx:if="{{content_invalid}}" class="weui-cell_iconbtn" bindtap="handleSelect"></view>-->
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</form>

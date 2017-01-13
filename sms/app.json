@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/msg/msg",
+    "pages/chats/chats",
+    "pages/query/query",
+    "pages/settings/settings",
+    "pages/chat/chat",
+    "pages/bind/bind"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3F51B5",
+    "navigationBarTitleText": "物联卡服务管理平台",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#3F51B5",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/msg/msg",
+        "iconPath": "image/ic_message_48pt.png",
+        "selectedIconPath": "image/ic_message_white_48pt.png",
+        "text": "发短信"
+      },
+      {
+        "pagePath": "pages/chats/chats",
+        "iconPath": "image/ic_chat_48pt.png",
+        "selectedIconPath": "image/ic_chat_white_48pt.png",
+        "text": "会话"
+      },
+      {
+        "pagePath": "pages/query/query",
+        "iconPath": "image/ic_search_48pt.png",
+        "selectedIconPath": "image/ic_search_white_48pt.png",
+        "text": "卡查询"
+      },
+      {
+        "pagePath": "pages/settings/settings",
+        "iconPath": "image/ic_settings_48pt.png",
+        "selectedIconPath": "image/ic_settings_white_48pt.png",
+        "text": "设置"
+      }
+    ]
+  }
+}
